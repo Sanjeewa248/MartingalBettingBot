@@ -1,0 +1,20 @@
+
+Round 1: win
+Round 2: win
+Round 3: win
+Round 4: lose
+Round 5: win
+Round 6: tie
+Round 7: win
+Round 8: lose
+Round 9: lose
+Round 10: win
+Round 11: tie
+Round 12: tie
+Round 13: lose
+Round 14: win
+Round 15: tie
+Round 16: lose
+Round 17: tie
+Round 18: win
+Round 19: lose
