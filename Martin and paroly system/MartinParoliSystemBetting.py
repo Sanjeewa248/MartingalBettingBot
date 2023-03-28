@@ -1,5 +1,6 @@
 import json
 import time
+import random
 
 class User:
     def __init__(self, name='', balance=0, ori_bet=0, bet=0, bet_place='', strategy=''):
@@ -79,21 +80,19 @@ users = [user1, user2, user3]
 
 round_num = 0
 winning_results = ['player', 'banker', 'tie']
-
-# Load the mock data from the JSON file
-with open('baccarat_result.json', 'r') as f:
-    mock_data = json.load(f)
+game_results = []
 
 print('first user information:')
 for user in users:
     user.print_status()
-
-# Iterate through the mock data, play game
-for result in mock_data:
+# play game for 19 rounds
+for i in range(19):
     time.sleep(2)
     round_num += 1
+    result = {'round': round_num, 'winner': random.choice(winning_results)}
+    game_results.append(result)
 
-    print(f'\n round {round_num} result : ')
+    print(f'\n round {round_num} result : {result}')
 
     for user in users:
         place = user.betting()
@@ -108,11 +107,18 @@ for result in mock_data:
             else:
                 user.achieve(0, 'lose')
 
-
     for user in users:
         user.print_status()
+
+# save the game results to a JSON file
+with open('game_results.json', 'w') as f:
+    json.dump(game_results, f)
 
 print("Final balances:")
 for user in users:
     user.print_status()
     user.print_cnt()
+
+
+
+
