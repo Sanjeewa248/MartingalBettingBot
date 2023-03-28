@@ -1,7 +1,6 @@
 import json
 import time
 
-
 # Define initial parameters
 user1_balance = 1000000
 user1_bet = 5000

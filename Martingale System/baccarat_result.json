@@ -1,0 +1,96 @@
+[
+	{
+		"round": 1,
+		"winner": "banker"
+	},
+
+	{
+		"round": 2,
+		"winner": "tie"
+	},
+
+	{
+		"round": 3,
+		"winner": "player"
+	},
+
+	{
+		"round": 4,
+		"winner": "player"
+	},
+
+	{
+		"round": 5,
+		"winner": "player"
+	},
+
+	{
+		"round": 6,
+		"winner": "banker"
+	},
+
+	{
+		"round": 7,
+		"winner": "banker"
+	},
+
+	{
+		"round": 8,
+		"winner": "player"
+	},
+
+	{
+		"round": 9,
+		"winner": "banker"
+	},
+
+	{
+		"round": 10,
+		"winner": "banker"
+	},
+
+	{
+		"round": 11,
+		"winner": "player"
+	},
+
+	{
+		"round": 12,
+		"winner": "banker"
+	},
+
+	{
+		"round": 13,
+		"winner": "banker"
+	},
+
+	{
+		"round": 14,
+		"winner": "player"
+	},
+
+	{
+		"round": 15,
+		"winner": "player"
+	},
+
+	{
+		"round": 16,
+		"winner": "tie"
+	},
+
+	{
+		"round": 17,
+		"winner": "player"
+	},
+
+	{
+		"round": 18,
+		"winner": "player"
+	},
+
+	{
+		"round": 19,
+		"winner": "banker"
+	}
+]
