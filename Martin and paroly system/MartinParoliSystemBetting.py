@@ -90,7 +90,7 @@ print('first user information:')
 for user in users:
     user.print_status()
 # play game for 19 rounds
-for i in range(500):
+for i in range(19):
     # time.sleep(2)
     round_num += 1
     result = {'round': round_num, 'winner': random.choice(winning_results)}
