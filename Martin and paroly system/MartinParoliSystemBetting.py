@@ -10,6 +10,7 @@ class User:
         self.bet = bet
         self.bet_place = bet_place
         self.strategy = strategy
+        self.ini_balance = balance
         self.win_cnt = 0
         self.lose_cnt = 0
         self.draw_cnt = 0
@@ -71,15 +72,15 @@ class User:
         print(f'name : {self.name}, win : {self.win_cnt}, lose : {self.lose_cnt}, draw : {self.draw_cnt}, streak : {self.streak}')
 
     def calculate_profit_loss(self):
-        self.profit_loss = self.balance - self.ori_bet
+        self.profit_loss = self.balance - self.ini_balance
 
 
 
 user1 = User('Daniel', 1000000, 5000, 5000, 'player', 'paroli')
-user2 = User('Jaina', 1000000, 5000, 5000, 'player', 'paroli')
-user3 = User('John', 1000000, 5000, 5000, 'banker', 'martin')
+user2 = User('Jaina', 1000000, 5000, 5000, 'player', 'martin')
 
-users = [user1, user2, user3]
+
+users = [user1, user2]
 # users.append(user3)
 
 round_num = 0
